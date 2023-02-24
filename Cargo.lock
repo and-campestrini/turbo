@@ -3720,6 +3720,29 @@ dependencies = [
 ]
 
 [[package]]
+name = "next-build"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap 4.1.4",
+ "mime",
+ "next-core",
+ "owo-colors",
+ "serde",
+ "tokio",
+ "turbo-malloc",
+ "turbo-tasks",
+ "turbo-tasks-build",
+ "turbo-tasks-fs",
+ "turbo-tasks-memory",
+ "turbopack-cli-utils",
+ "turbopack-core",
+ "turbopack-dev-server",
+ "turbopack-node",
+ "vergen",
+]
+
+[[package]]
 name = "next-core"
 version = "0.1.0"
 dependencies = [
@@ -3760,7 +3783,7 @@ dependencies = [
  "dunce",
  "futures",
  "mime",
- "next-core",
+ "next-build",
  "nix",
  "once_cell",
  "owo-colors",
@@ -3783,7 +3806,6 @@ dependencies = [
  "turbopack-core",
  "turbopack-create-test-app",
  "turbopack-dev-server",
- "turbopack-node",
  "url",
  "vergen",
  "webbrowser 0.7.1",
